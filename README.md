@@ -17,10 +17,6 @@ pip install --editable ./
 conda install faiss-gpu -c pytorch
 ```
 
-## Datastore creation
-build bilingual datastore
-create multilingual datastor
-
 ### 1. Download pretrained models and dataset
 You can prepare pretrained models and dataset by executing the following command:
 
