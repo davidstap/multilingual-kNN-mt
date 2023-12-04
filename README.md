@@ -81,13 +81,12 @@ Use the following script to do inference using *k*NN, and calculate BLEU scores:
 ```shell
 SRC=he
 TGT=en
-DATA_PATH=/path/to/preprocessed/dataset
-MODEL_PATH=/path/to/preprocessed/model
-RESULTS_PATH=${MODEL_PATH}/generations/gen-test-${SRC}_${TGT}-${DS}-k_${KNN_K}-l_${KNN_LAMBDA}-t_${KNN_TEMP}
-
 KNN_K=16
 KNN_LAMBDA=0.5
 KNN_TEMP=100
+DATA_PATH=/path/to/preprocessed/dataset
+MODEL_PATH=/path/to/preprocessed/model
+RESULTS_PATH=${MODEL_PATH}/generations/gen-test-${SRC}_${TGT}-${DS}-k_${KNN_K}-l_${KNN_LAMBDA}-t_${KNN_TEMP}
 
 CUDA_VISIBLE_DEVICES=0 python knnbox-scripts/common/generate.py $DATA_PATH \
     --task translation_multi_simple_epoch \
