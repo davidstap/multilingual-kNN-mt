@@ -4,7 +4,7 @@
 This repo contains code for the paper [Multilingual _k_-Nearest-Neighbor Machine Translation](https://arxiv.org/abs/2310.14644) (EMNLP 2023).
 
 ## Installation
-Our code builds on the [_k_nn-box toolkit](https://github.com/NJUNLP/knn-box/tree/master). You can install the toolkit and our extensions by:
+Our code builds on the [knn-box toolkit](https://github.com/NJUNLP/knn-box/tree/master). You can install the toolkit and our extensions by:
 
 ```shell
 conda create -n multilingual-knn python=3.8
